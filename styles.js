@@ -14,10 +14,16 @@ export default StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
-  buttonContainer: {
-    width: '15%',
-    alignContent: 'center',
-  },
+   buttonRow: {
+       flexDirection: 'row', 
+       justifyContent: 'space-around',
+       width: '50%', 
+       marginTop: 20,
+   },
+   buttonContainer: {
+     width: '40%',
+     marginHorizontal: 10,
+   },
     input: {
     borderWidth: 1,
     borderColor: "#ccc",
@@ -51,5 +57,19 @@ export default StyleSheet.create({
     shadowOffset: { width: 0, height: 2 },
     shadowRadius: 4,
     elevation: 2,
+  },
+  card: {
+    backgroundColor: "#d3d2d2ff",
+    padding: 15,
+    marginBottom: 10,
+    borderRadius: 8,
+    shadowColor: "#000",
+    shadowOpacity: 0.1,
+    shadowOffset: { width: 0, height: 2 },
+    shadowRadius: 4,
+    elevation: 2,
+  },
+  cardText: {
+    fontSize: 15,
   },
 })

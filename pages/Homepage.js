@@ -8,10 +8,18 @@ export default function Homepage({navigation}){
             <Image source={require('../assets/logo.png')} style={styles.imgLogo} />
             <Text style={styles.title}> Welcome to UA SERP!</Text>
 
+            <View style={styles.buttonRow}>
             <View style={styles.buttonContainer}>
                 <Button color='#50C878'
                  title="Register" 
                  onPress={() => navigation.navigate('Register')}/>
+            </View>
+
+            <View style={styles.buttonContainer}>
+                <Button color='#50C878'
+                 title="View Users" 
+                 onPress={() => navigation.navigate('UserList')}/>
+            </View>
             </View>
         </View>
     )

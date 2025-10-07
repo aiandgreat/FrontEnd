@@ -27,7 +27,7 @@ export default function ReviewPage({route, navigation}){
             <Text style={styles.userInfo}>Password: {formData.password}</Text>
             <Text style={styles.userInfo}>Gender: {formData.gender}</Text>
 
-            <View style={{gap: 10}}>
+            <View>
             <Button
             color='#50C878'
             title="Go back to edit" 
