@@ -1,26 +1,29 @@
-import React from 'react';
-import {View, Text, Button, Image} from 'react-native';
+import { View, Text, Button, Image } from 'react-native';
 import styles from '../styles';
 
-export default function Homepage({navigation}){
-    return(
-        <View style={styles.container}>
-            <Image source={require('../assets/logo.png')} style={styles.imgLogo} />
-            <Text style={styles.title}> Welcome to UA SERP!</Text>
+export default function Homepage({ navigation }) {
+  return (
+    <View style={styles.container}>
+      <Image source={require('../assets/logo.png')} style={styles.imgLogo} />
+      <Text style={styles.title}>Welcome to UA SERP!</Text>
 
-            <View style={styles.buttonRow}>
-            <View style={styles.buttonContainer}>
-                <Button color='#50C878'
-                 title="Register" 
-                 onPress={() => navigation.navigate('Register')}/>
-            </View>
-
-            <View style={styles.buttonContainer}>
-                <Button color='#50C878'
-                 title="View Users" 
-                 onPress={() => navigation.navigate('UserList')}/>
-            </View>
-            </View>
+      <View style={styles.homepageButtonRow}>
+        <View style={styles.homepageButtonContainer}>
+          <Button
+            color="#50C878"
+            title="Register"
+            onPress={() => navigation.navigate('Register')}
+          />
         </View>
-    )
+
+        <View style={styles.homepageButtonContainer}>
+          <Button
+            color="#50C878"
+            title="View Users"
+            onPress={() => navigation.navigate('UserList')}
+          />
+        </View>
+      </View>
+    </View>
+  );
 }

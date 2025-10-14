@@ -7,7 +7,7 @@ export default function ReviewPage({route, navigation}){
 
     const handleSubmit = async () => {
         try {
-            const response = await axios.post("http://127.0.0.1:8000/registration/api/register/", formData);
+            const response = await axios.post("http://192.168.30.231:8000/registration/api/register/", formData);
             Alert.alert("Success", "User registered successfully");
             navigation.getBack();
 
@@ -27,17 +27,24 @@ export default function ReviewPage({route, navigation}){
             <Text style={styles.userInfo}>Password: {formData.password}</Text>
             <Text style={styles.userInfo}>Gender: {formData.gender}</Text>
 
-            <View>
-            <Button
-            color='#50C878'
-            title="Go back to edit" 
-            onPress={() => navigation.goBack()}/>
-            
-            <Button
-            color='#50C878'
-            title="Submit" 
-            onPress={handleSubmit}/>
+        <View style={styles.reviewButtonContainer}>
+            <View style={styles.reviewButton}>
+                <Button
+                color='#50C878'
+                title="Go back to edit"
+                onPress={() => navigation.goBack()}
+                />
             </View>
+
+            <View style={styles.reviewButton}>
+                <Button
+                color='#50C878'
+                title="Submit"
+                onPress={handleSubmit}
+                />
+            </View>
+        </View>
+
             </View>
 
             

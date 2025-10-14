@@ -28,7 +28,7 @@ const handleChange =(field, value) => {
             onChangeText={(text) => handleChange('first_name',text)}/>
 
             <TextInput style={styles.input} placeholder='Last Name:'
-            value={formData.last_name_name}
+            value={formData.last_name}
             onChangeText={(text) => handleChange('last_name',text)}/>
 
             <TextInput style={styles.input} placeholder='Email:'
