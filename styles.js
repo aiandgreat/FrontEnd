@@ -137,5 +137,20 @@ reviewButton: {
   shadowRadius: 3,
   marginHorizontal: 8,             // horizontal margin inside button containers
 },
+EditUserButtonContainer: {
+  alignItems: 'center',
+  justifyContent: 'center',
+  width: '100%',
+},
+EditUserButton: {
+  maxWidth: '50%',
+  borderRadius: 8,
+  elevation: 3,
+  shadowColor: '#000',
+  shadowOffset: { width: 0, height: 2 },
+  shadowOpacity: 0.3,
+  shadowRadius: 3,
+  overflow: 'hidden',
+}
 
 });
